@@ -1,0 +1,111 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
+  float: none;
+  background: #fff;
+  width: 97%;
+}
+
+header {
+  background-color: #29009c;
+  color: #fff;
+}
+
+div img {
+  width: 20%;
+}
+
+/* Coluna para deixar no mobile */
+.col-4,
+.col-1-2-menu,
+.col-2,
+.col-1-4,
+.col-3-4,
+.col-1-2 {
+  width: 92%;
+  margin: 0 4%;
+  min-height: 1px;
+  padding: 0.5em;
+}
+
+.col-3-4 {
+  background-color: #be82df;
+}
+
+.col-4 {
+  background-color: #5769ff;
+}
+
+.friends-p {
+  text-align: center;
+}
+.col-1-2,
+.col-1-4 {
+  /* background-color: ; */
+}
+
+.col-2 {
+  background-color: #a29bc4;
+}
+
+.main-title {
+  text-align: center;
+  padding: 1em;
+}
+.main-title h1 {
+  font-size: 3em;
+}
+
+.footer {
+  background-color: #1456ff;
+  color: #fff;
+}
+
+/* Media queres */
+/* tables */
+@media only screen and (min-width: 480px) {
+  div img {
+    width: 100%;
+    max-width: 250px;
+  }
+  .col-4,
+  .col-2,
+  .col-1-4,
+  .col-3-4,
+  .col-1-2 {
+    margin-right: 0;
+    float: left;
+  }
+  .col-1-2-menu,
+  .col-1-2,
+  .col-2 {
+    width: 44%;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 768px) {
+  .col-1-4,
+  .col-1-2 {
+    width: 20%;
+  }
+  .col-3-4 {
+    width: 68%;
+  }
+}
