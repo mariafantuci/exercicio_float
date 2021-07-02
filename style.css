@@ -34,7 +34,8 @@ div img {
   width: 40%;
 }
 
-.col-1-2 {
+.col-1-2,
+.col-1-4 {
   width: 92%;
   min-height: 1px;
   padding: 0.5em;
@@ -58,6 +59,11 @@ div img {
   padding-left: 16px;
 }
 
+/* Section 2 */
+.col-1-4 {
+  background-color: #818fff;
+}
+
 /* Media queres */
 /* tables */
 @media only screen and (min-width: 480px) {
@@ -65,9 +71,12 @@ div img {
     width: 100%;
     max-width: 250px;
   }
-
   .menu {
     float: right;
+  }
+  .col-1-4 {
+    margin-right: 0;
+    float: left;
   }
 }
 
@@ -92,5 +101,8 @@ div img {
     width: 20%;
     float: left;
     margin-right: 10px;
+  }
+  .col-1-4 {
+    width: 20%;
   }
 }
