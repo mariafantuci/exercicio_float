@@ -2,14 +2,6 @@ html {
   box-sizing: border-box;
   font-family: sans-serif;
 }
-header,
-main,
-footer {
-  box-sizing: inherit;
-  display: inline-block;
-  margin: 0 4%;
-}
-
 *,
 *::before,
 *::after {
@@ -29,39 +21,56 @@ footer {
   background: #fff;
   width: 97%;
 }
-
-div img {
-  width: 40%;
+.menu p {
+  text-align: center;
 }
-
-.col-1-2,
-.col-1-4 {
-  width: 92%;
-  min-height: 1px;
-  padding: 0.5em;
-}
-
-/* Header */
-.header {
+header {
   background-color: #29009c;
   color: #fff;
 }
 
-.menu img {
+div img {
+  width: 80%;
+}
+
+.img-left {
+  width: 40%;
   float: left;
-  margin-right: 4%;
+  margin-right: 5px;
+  border-radius: 5%;
+  box-sizing: border-box;
 }
 
-.title h1 {
-  text-align: center;
+/* Coluna para deixar no mobile */
+.col-4,
+.col-1-4,
+.col-1-2 {
+  width: 92%;
+  margin: 0 4%;
+  min-height: 1px;
+  padding: 0.5em;
 }
-.title p {
-  padding-left: 16px;
-}
-
-/* Section 2 */
 .col-1-4 {
   background-color: #818fff;
+}
+.img-center {
+  text-align: center;
+}
+header {
+  background-color: #29009c;
+}
+.col-4 {
+  background-color: #5769ff;
+}
+.menu {
+  padding: auto;
+}
+.main-title {
+  text-align: center;
+  padding: 1em;
+}
+.main-title h1 {
+  font-size: 3em;
 }
 
 /* Media queres */
@@ -71,38 +80,49 @@ div img {
     width: 100%;
     max-width: 250px;
   }
-  .menu {
-    float: right;
-  }
-  .col-1-4 {
+
+  .col-1-4,
+  .col-1-2 {
     margin-right: 0;
     float: left;
+  }
+
+  .col-1-2-menu,
+  .col-1-2 {
+    width: 44%;
   }
 }
 
 /* desktop */
 @media only screen and (min-width: 768px) {
-  .header {
-    background-color: #fff;
-  }
-  .col-1-2 {
-    background-color: #29009c;
-    color: #fff;
-  }
   .title {
-    width: 42%;
     float: left;
   }
   .menu {
-    width: 42%;
-    float: right;
-  }
-  .menu img {
-    width: 20%;
-    float: left;
-    margin-right: 10px;
+    height: auto;
   }
   .col-1-4 {
     width: 20%;
+  }
+  .title,
+  .menu {
+    background-color: #29009c;
+    height: auto;
+  }
+  .img-left {
+    width: auto;
+    float: left;
+    margin-right: 5px;
+  }
+  .bold {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+  }
+  header {
+    background-color: #fff;
+  }
+  .col-3-4 {
+    width: 68%;
   }
 }
